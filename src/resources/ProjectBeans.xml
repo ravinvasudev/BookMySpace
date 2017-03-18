@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="projectAction" class="com.bms.action.ProjectAction" scope="prototype">
+		<property name="controller" ref="projectController" />
+	</bean>
+	
+	<bean id="projectController" class="com.bms.controller.ProjectControllerImpl">
+		<property name="dao" ref="projectDAO" />
+	</bean>
+
+	<bean id="projectDAO" class="com.bms.dao.ProjectDAOImpl">
+		<property name="dbService" ref="dbService" />
+	</bean>	
+
+</beans>

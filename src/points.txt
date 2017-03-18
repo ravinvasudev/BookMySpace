@@ -1,0 +1,11 @@
+Projects listing page::
+	get featured projects
+	get new projects
+	get upcoming projects
+	
+	This will bring the Project summary, few statistics and recent activity.
+
+Project page::
+>>single hit vs many hits
+	floor plan - 	will get thumbnail and zoom image url initially. 
+					will get zoom image upon clicking on the thumbnail.

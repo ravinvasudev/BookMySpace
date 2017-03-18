@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+
+		<File name="JuristCore" fileName="Jurist.log" append="false">
+			<PatternLayout pattern="%t %-5p %c{2} - %m%n" />
+		</File>
+
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<!-- <PatternLayout pattern="%d [%-5level] [%logger{36}:%L] [%F:%L] - %msg%n"/> -->
+			<PatternLayout pattern="%d [%-5level] [%F:%L] - %msg%n"/>
+		</Console>
+
+	</Appenders>
+
+	<Loggers>
+
+		<!-- <Logger name="in.co.jurist.core" level="debug">
+			<AppenderRef ref="JuristCore" />
+		</Logger> -->
+
+		<Root level="debug">
+			<AppenderRef ref="STDOUT" />
+		</Root>
+
+	</Loggers>
+</Configuration>
